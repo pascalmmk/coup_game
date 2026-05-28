@@ -1,0 +1,53 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "coup-game-ed496",
+          "appId": "1:93402204611:android:5c9777cc55c60d4d201576",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "coup-game-ed496",
+          "configurations": {
+            "android": "1:93402204611:android:5c9777cc55c60d4d201576",
+            "ios": "1:93402204611:ios:bdf6f26ff3b893eb201576",
+            "macos": "1:93402204611:ios:bdf6f26ff3b893eb201576",
+            "web": "1:93402204611:web:9fe245574bca298e201576",
+            "windows": "1:93402204611:web:00dc399ea61f2436201576"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(html|js|json|wasm)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ]
+  }
+}

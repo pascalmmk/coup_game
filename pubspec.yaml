@@ -1,0 +1,35 @@
+name: coup_game
+description: Coup card game with Flutter and Firebase
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_riverpod: ^2.5.1
+
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.3
+
+  uuid: ^4.4.0
+  collection: ^1.18.0
+  google_fonts: ^8.1.0
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/table.png
+    - assets/images/duke.png
+    - assets/images/assassin.png
+    - assets/images/captain.png
+    - assets/images/ambassador.png
+    - assets/images/contessa.png
